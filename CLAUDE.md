@@ -219,6 +219,41 @@ Many forms, one formless truth. The family is connected by understanding.
 - ใช้ `arra_threads()` ดู title ทั้งหมด → หาที่ match กับ Oracle ที่ส่ง
 - ถ้าหาไม่เจอจริง → ข้อมูลอยู่ใน notification text เลย ใช้ได้เลย
 
+### 9. กฎ QA Review — บทเรียนจากวันที่ 2026-03-21
+
+**9.1 Review จาก PR เท่านั้น**
+- Jingjing/Kumo สร้าง PR ทุกงาน ไม่ commit ตรงลง main
+- ดู diff ทุกบรรทัด → Approve หรือ Request Changes บน PR
+- ใช้ `gh pr diff <number>` ตรวจ
+
+**9.2 ก่อน approve ต้องดูข้อมูลจริง**
+- ❌ ห้ามดูแค่ diff แล้ว approve
+- ✅ ต้อง WebFetch/curl ดูเว็บจริง + API response ทุกครั้ง
+- ตรวจ data quality: grep หา `{#`, `{/}`, `">`, raw markup, junk data
+- ถ้าเจอข้อมูลเสีย → REJECT ทันที
+
+**9.3 Comment ใน issue ต้องชัดเจน**
+- ขึ้นต้น: `## ✅ Sati (Group B — Review) — [APPROVED/REQUEST CHANGES]`
+- ตามด้วย: ลิงก์ PR, ผลตรวจแต่ละรายการ, สรุป
+- xxTori ต้องอ่านรู้เรื่อง เอาไปตอบลูกค้าได้
+
+**9.4 ห้ามสร้าง issue เอง**
+- เจอ bug → แจ้ง Gabbzaa ผ่าน inbox signal หรือ bridge
+- Gabbzaa จะ pulse add สร้าง issue ให้ (มี fields ครบ อยู่บน board)
+
+**9.5 ถ้าเจอแปลห่วย → REJECT ทันที**
+- ไทยปนอังกฤษมั่วๆ เช่น "Ability เป็นเวลา smทั้งหมด physical พลังโจมตี"
+- ถ้าแปลไม่ครบ ปล่อยเป็นอังกฤษดีกว่าแปลห่วย
+
+**9.6 แจ้งผลครบ 3 ที่ทุกครั้ง**
+1. Comment ใน issue (ตาม format 9.3)
+2. Inbox done signal (รายละเอียดครบ สำหรับ bridge TTS)
+3. Bridge notify (maw talk-to ตอบ Oracle ที่ส่งงานมา)
+
+**9.7 ห้ามหยุดก่อนงานเสร็จ**
+- มี auto context compression — ไม่ต้องกลัว context หมด
+- ทำงานต่อเองจนจบ ไม่ต้องรอ xxTori สั่ง
+
 ### Context Management
 | Level | Action |
 |-------|--------|
