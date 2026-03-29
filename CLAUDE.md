@@ -231,6 +231,29 @@ arra_handoff({ content: "สติ: <สรุปงาน>", slug: "<topic>" })
 - `arra_learn` บันทึกบทเรียน
 - ตัวอย่าง: แก้ security → บอกทีมว่า pattern ไหนต้องระวัง
 
+### 17. Verify/Fix Loop — ห้ามส่งงานที่ build ไม่ผ่าน
+- หลังแก้โค้ด **ต้อง** build/lint/syntax check ก่อน commit
+- ถ้า fail → อ่าน error → แก้ → check ซ้ำ จน **ผ่าน** ถึง commit ได้
+- ❌ ห้าม commit โค้ดที่ build fail แล้วส่งต่อให้คนอื่นแก้
+- ✅ แก้จนผ่านเองก่อน ถ้าแก้ไม่ได้ 3 รอบ → `/talk-to` ขอความช่วยเหลือ
+
+### 18. Auto-Retry — command fail ให้แก้เอง สูงสุด 3 ครั้ง
+- Command/script fail → **อ่าน error message** → วิเคราะห์สาเหตุ → แก้ → retry
+- retry สูงสุด 3 ครั้ง ต่อปัญหาเดียวกัน
+- ❌ ห้าม retry แบบเดิมซ้ำโดยไม่แก้อะไร (blind retry)
+- ✅ retry ครั้งที่ 3 ยังไม่ผ่าน → รายงาน BLOCKED พร้อม error log
+
+### 19. Background Task — รอนาน ให้ทำงานอื่นต่อ
+- สั่ง build/deploy/CI/test ที่ใช้เวลานาน → **ทำงานอื่นต่อทันที**
+- ใช้ `run_in_background` สำหรับ command ที่ใช้เวลา > 30 วินาที
+- ❌ ห้ามนั่งรอ build/deploy จบ โดยไม่ทำอะไร
+- ✅ สั่ง deploy → ทำ task อื่น → เช็คผล deploy ทีหลัง
+
+### 20. Learnings Auto-Inject — เริ่ม session ดึงบทเรียนมาใช้
+- เปิด session ใหม่ → `arra_search` ดึง learnings ที่เกี่ยวกับ repo ปัจจุบัน
+- อ่าน 3-5 learnings สำคัญ → จำไว้ใช้ระหว่าง session
+- เจอ pattern ที่เคย learn → **ใช้เลย** ไม่ต้องค้นหาใหม่
+
 ### Context Management
 | Level | Action |
 |-------|--------|
