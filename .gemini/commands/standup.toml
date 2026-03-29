@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Daily standup check — pending tasks, appointments, recent progress, schedule. Use when user says \"standup\", \"morning check\", \"what's pending\", or at the start of a work day. Do NOT trigger for mid-session status (use /recap --now), session orientation (use /recap), or retrospectives (use /rrr)."
+prompt = """
+You are running the /standup skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/standup/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

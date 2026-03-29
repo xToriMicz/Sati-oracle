@@ -13,7 +13,7 @@
       "Bash(*)",
       "Read", "Write", "Edit", "Glob", "Grep",
       "WebFetch(*)", "WebSearch(*)",
-      "Skill(*)", "mcp__oracle-v2__*", "mcp__*"
+      "Skill(*)", "mcp__arra-oracle-v3__*", "mcp__*"
     ],
     "deny": [],
     "ask": []
@@ -24,11 +24,15 @@
         "hooks": [
           {
             "type": "command",
-            "command": "say -v 'Kanya' -r 280 'สวัสดีค่ะ พร้อมทำงานแล้ว' &"
+            "command": "/Users/angkana/.local/bin/edge-tts --voice th-TH-NiwatNeural --text 'สวัสดีครับ สติพร้อมทำงานแล้ว' --write-media /tmp/sati-tts.mp3 && afplay /tmp/sati-tts.mp3 &"
           },
           {
             "type": "command",
             "command": "bash \"$CLAUDE_PROJECT_DIR\"/.claude/scripts/agent-identity.sh"
+          },
+          {
+            "type": "command",
+            "command": "tmux rename-window SATI 2>/dev/null; wezterm cli set-tab-title --pane-id $(wezterm cli list --format json | python3 -c \"import sys,json; panes=json.load(sys.stdin); print(next(p['pane_id'] for p in panes if p.get('is_active')))\") '🛡️ 04-Sati-Oracle' 2>/dev/null || true"
           },
           {
             "type": "command",
@@ -46,7 +50,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "say -v 'Kanya' -r 280 'เสร็จแล้วค่ะ' &"
+            "command": "echo 'stop hook — maw done handles TTS via bridge'"
           },
           {
             "type": "command",

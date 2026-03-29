@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Full anatomy scan of ONE session JSONL. Timeline, commits, gaps, emotional arc, energy map, stats. 4 parallel subagents. Use when user says \"xray\", \"xray session\", \"session anatomy\", \"what happened in session X\"."
+prompt = """
+You are running the /xray skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/xray/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Display Oracle philosophy — the 5 Principles + Rule 6. Use when user asks about principles, \"nothing deleted\", \"patterns over intentions\", Oracle philosophy, or needs alignment check. Do NOT trigger for \"who are you\" (use /who-are-you), \"what is oracle\" (use /about-oracle), or session status questions."
+prompt = """
+You are running the /philosophy skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/philosophy/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Text-to-speech using edge-tts or macOS say. Use when user says \"speak\", \"say\", \"read aloud\", or wants text spoken."
+prompt = """
+You are running the /speak skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/speak/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

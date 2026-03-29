@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Sync Oracle instruments with the family. Check and update skills to latest version. Use when user says \"soul-sync\", \"sync\", \"calibrate\", \"update\", or before /awaken."
+prompt = """
+You are running the /oracle-soul-sync-update skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/oracle-soul-sync-update/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

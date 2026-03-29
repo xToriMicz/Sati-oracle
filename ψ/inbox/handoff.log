@@ -9,3 +9,36 @@
   fdc6400 Open permissions with safety-check guard — enable autonomous work
   609284c Add test specs for Parami — closes #1
 
+
+---
+## 2026-03-20 08:03 | 97%
+
+**Focus**: 
+
+**Commits**:
+  6a3d9f6 Add Standing Orders, QA learnings, and org infrastructure
+  615ec36 Add full Oracle toolkit — CLAUDE docs, subagents, scripts, hooks
+  fdc6400 Open permissions with safety-check guard — enable autonomous work
+
+
+---
+## 2026-03-20 10:04 | 97%
+
+**Focus**: 
+
+**Commits**:
+  6a3d9f6 Add Standing Orders, QA learnings, and org infrastructure
+  615ec36 Add full Oracle toolkit — CLAUDE docs, subagents, scripts, hooks
+  fdc6400 Open permissions with safety-check guard — enable autonomous work
+
+
+---
+## 2026-03-22 22:21 | 97%
+
+**Focus**: 
+
+**Commits**:
+  040544b restructure: ปลด Senior Lead เป็น Group A member
+  8ba928e revert: Context Management กลับ 70/80/90%
+  cf77501 rename: Gabbzaa → 072
+

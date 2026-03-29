@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Session awareness — alias for /recap --now deep. Quick mid-session check of current topic, timeline, and pending items. Use when user asks \"now\", \"where are we\", \"what are we doing\". Do NOT trigger for full session start orientation (use /recap), \"standup\" (use /standup), or past session mining (use /dig)."
+prompt = """
+You are running the /where-we-are skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/where-we-are/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

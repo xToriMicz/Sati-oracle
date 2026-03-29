@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Know ourselves — show current AI identity, model info, session stats, and Oracle philosophy. Use when user asks \"who are you\", \"who\", \"who we are\", \"what model\", or wants to check current AI identity and session context. Do NOT trigger for \"what is oracle\" (use /about-oracle), \"philosophy\" or \"principles\" (use /philosophy), or general project questions."
+prompt = """
+You are running the /who-are-you skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/who-are-you/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

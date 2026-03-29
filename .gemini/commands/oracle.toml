@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Manage Oracle skills — profiles, features, enable/disable. Use when user says \"oracle\", \"profile\", \"install skill\", \"remove skill\", \"switch profile\", \"enable\", \"disable\"."
+prompt = """
+You are running the /oracle skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/oracle/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

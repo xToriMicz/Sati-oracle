@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Work on an issue OR resume a killed worktree. Use when user says \"workon\", \"work on\", \"implement issue\", \"resume\", \"bring back\", \"restore worktree\"."
+prompt = """
+You are running the /workon skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/workon/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

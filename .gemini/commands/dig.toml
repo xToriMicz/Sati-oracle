@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Mine Claude Code sessions — timeline, gaps, repo attribution, session history. Use when user says \"dig\", \"sessions\", \"past sessions\", \"timeline\", \"what did I work on\", or wants to see session history. Do NOT trigger for finding code/projects (use /trace), exploring repos (use /learn), or current session status (use /recap)."
+prompt = """
+You are running the /dig skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/dig/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Find projects, code, and knowledge across git history, repos, docs, and Oracle. Use when user asks \"trace\", \"find project\", \"where is [project]\", \"search history\", or needs to locate something across the codebase. Supports --oracle (fast), --smart (default), --deep (5 subagents). Do NOT trigger for session mining or \"past sessions\" (use /dig), or codebase exploration \"learn repo\" (use /learn)."
+prompt = """
+You are running the /trace skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/trace/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

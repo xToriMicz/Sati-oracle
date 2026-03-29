@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Create session retrospective with AI diary and lessons learned. Use when user says \"rrr\", \"retrospective\", \"wrap up session\", \"session summary\", or at end of work session."
+prompt = """
+You are running the /rrr skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/rrr/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

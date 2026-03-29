@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | Log emotions with optional structure. Use when user says \"feel\", \"feeling\", \"mood\", \"tired\", \"sleepy\", \"frustrated\", \"happy\", \"excited\"."
+prompt = """
+You are running the /feel skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/feel/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""

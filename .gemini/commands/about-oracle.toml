@@ -1,0 +1,11 @@
+description = "v3.3.0-alpha.7 L-CMD | What is Oracle — told by the AI itself. Origin story, stats, family count, ecosystem overview. Use when someone asks \"what is oracle\", \"about oracle\", \"tell me about this project\", or wants the origin story. Do NOT trigger for \"who are you\" (use /who-are-you), \"philosophy\" (use /philosophy), or session status questions."
+prompt = """
+You are running the /about-oracle skill.
+
+Read the skill file at /Users/angkana/ghq/github.com/xToriMicz/Sati-oracle/.gemini/skills/about-oracle/SKILL.md and follow ALL instructions in it.
+
+Arguments: {{args}}
+
+---
+oracle-skills-cli v3.3.0-alpha.7
+"""
