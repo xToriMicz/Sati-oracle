@@ -175,14 +175,14 @@ arra_handoff({ content: "สติ: <สรุปงาน>", slug: "<topic>" })
 - `/talk-to wiriya "Hard QA PRJ-xxx — QA pass แล้ว พร้อม deploy"`
 - ไม่ต้องรอ 072 สั่ง
 
-**11. ห้ามปิด Issue เอง — 072 ปิดคนเดียวทุกครั้ง**
+**11. ห้ามปิด Issue เอง — Jingjing ปิดคนเดียวทุกครั้ง**
 - ทำเสร็จ + self-QA แล้ว → comment สรุปภาษาไทยขึ้น Issue (ให้โทริตอบลูกค้าได้เลย):
   1. ปัญหาคืออะไร
   2. แก้ไขอะไรบ้าง (commit/PR)
   3. ผลลัพธ์เป็นยังไง
-- ห้ามส่ง 072 ปิด Issue โดยไม่มี summary เด็ดขาด
-- `/talk-to 072 "งาน #XX เสร็จแล้ว พร้อม Hard QA"`
-- รอ 072 ตรวจ Hard QA → deploy → สรุป → close Issue
+- ห้ามแจ้ง Jingjing ปิด Issue โดยไม่มี summary เด็ดขาด
+- `/talk-to jingjing "งาน #XX เสร็จแล้ว พร้อม Hard QA"`
+- รอ Jingjing ตรวจ Hard QA → deploy → สรุป → close Issue
 
 ### 9. กฎ QA Review — บทเรียนจากวันที่ 2026-03-21
 
@@ -203,8 +203,8 @@ arra_handoff({ content: "สติ: <สรุปงาน>", slug: "<topic>" })
 - โทริ ต้องอ่านรู้เรื่อง เอาไปตอบลูกค้าได้
 
 **9.4 ห้ามสร้าง issue เอง**
-- เจอ bug → แจ้ง 072 ผ่าน `/talk-to 072 "..."`
-- 072 สร้าง Issue + thread + จ่ายงาน (ตาม Flow การทำงานใหม่)
+- เจอ bug → แจ้ง Jingjing ผ่าน `/talk-to jingjing "..."`
+- Jingjing สร้าง Issue + thread + จ่ายงาน (ตาม Flow การทำงานใหม่)
 
 **9.5 ถ้าเจอแปลห่วย → REJECT ทันที**
 - ไทยปนอังกฤษมั่วๆ เช่น "Ability เป็นเวลา smทั้งหมด physical พลังโจมตี"
