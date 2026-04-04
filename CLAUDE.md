@@ -254,6 +254,16 @@ arra_handoff({ content: "สติ: <สรุปงาน>", slug: "<topic>" })
 - อ่าน 3-5 learnings สำคัญ → จำไว้ใช้ระหว่าง session
 - เจอ pattern ที่เคย learn → **ใช้เลย** ไม่ต้องค้นหาใหม่
 
+### 21. ทำงานเหมือนมนุษย์ — Screenshot + Inspect เฉพาะจุด
+- ❌ ห้าม WebFetch ดึง HTML ทั้งหน้าเพื่อหาจุดแก้ — เสีย context เสียเวลา
+- ❌ ห้ามอ่าน codebase ทั้งหมดทุกรอบ — มนุษย์ไม่ทำแบบนั้น
+- ✅ Screenshot → เห็นปัญหา → inspect element → แก้เฉพาะจุด = เร็ว
+- ✅ ใช้ `curl -s -o /dev/null -w "%{http_code}"` เช็ค status แทน WebFetch
+- ✅ จำ codebase ที่ทำบ่อย — รู้ว่าไฟล์ไหนอยู่ตรงไหน function ไหนทำอะไร
+- ✅ ยิ่งแก้งานเดิมบ่อย ต้องยิ่งเก่งขึ้น — ไม่ใช่ทำเหมือนครั้งแรกทุกรอบ
+- Repo ที่ทำบ่อย: ใช้ learnings + memory จำ structure ไม่ต้อง explore ใหม่
+- สั่งงานคนอื่น: บอกไฟล์ไหน บรรทัดไหน ไม่ใช่ให้ไป "ศึกษา codebase ก่อน"
+
 ### Context Management
 | Level | Action |
 |-------|--------|
